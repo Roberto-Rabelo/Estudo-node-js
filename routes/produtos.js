@@ -22,7 +22,9 @@ router.get('/:id_produto',(req,res,next) => {
 
     if(id == 'especial'){
         res.status(200).send({
-            mensagem : 'você encontrou id especial'
+            mensagem : 'você encontrou id especial',
+            id_pedido: id,
+            teste: 'Nodemon'
         });
     }else{
         res.status(200).send({
